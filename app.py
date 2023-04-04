@@ -46,7 +46,7 @@ st.title("Image to PDF Converter")
 uploaded_images = st.file_uploader("Choose images (JPG or PNG)", type=["jpg", "png"], accept_multiple_files=True)
 pdf_name = st.text_input("Enter the name for your PDF file:")
 
-if st.button("Convert and Download"):
+if st.button("VIKA TUPICA"):
     if uploaded_images and pdf_name:
         images = get_image_list(uploaded_images)
         output_buffer = io.BytesIO()
