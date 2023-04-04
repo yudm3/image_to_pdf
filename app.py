@@ -4,6 +4,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 import io
 import base64
+from reportlab.lib.utils import ImageReader
 
 def image_to_pdf(images, output_buffer):
     pdf = canvas.Canvas(output_buffer, pagesize=letter)
