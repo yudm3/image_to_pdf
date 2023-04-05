@@ -43,7 +43,7 @@ def get_binary_file_downloader_link(file_buffer, file_name):
 
 st.title("Image to PDF Converter")
 
-uploaded_images = st.file_uploader("Choose images (JPG or PNG)", type=["jpg", "png"], accept_multiple_files=True)
+uploaded_images = st.file_uploader("Choose images (JPG or PNG)", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
 pdf_name = st.text_input("Enter the name for your PDF file <without .pdf> :")
 
 if st.button("Convert and Download"):
